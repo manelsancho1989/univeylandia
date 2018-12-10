@@ -16,7 +16,7 @@
   }
   </style>
 </head>
-<body id="body" onload="myFunction2()">
+<body id="body" onload="arrayMenjar()">
   <nav class="navbar navbar-expand-sm py-0">
     <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -78,42 +78,7 @@
   </nav>
 
 <!-- SLIDER-->
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 class="text-center">
-        Benvingut als Mini Jocs.
-      </h1>
-    </div>
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myFunction3()" src="../img/bart.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myfunction5()" src="../img/joc paraules.png" class="img-fluid" alt="Responsive image">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myfunction6()" src="../img/replace.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myfunction7()" src="../img/homer.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myfunction8()" src="../img/burns.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-sm-5 py-5 px-5">
-      <img onclick="myfunction8()" src="../img/lisa.png" class="img-fluid" alt="Responsive image">
-    </div>
-  </div>
-  <div class ="row">
-    <div class ="col -sm-12">
-    <button type="button" onclick="myFuncion4()" class="btn btn-primary">Requisits per a jugar als mini jocs</button>
-  </div>
-</div>
-</div>
+
 <!-- FI NOTICIES -->
 
 <!-- PROMOCIONS -->
