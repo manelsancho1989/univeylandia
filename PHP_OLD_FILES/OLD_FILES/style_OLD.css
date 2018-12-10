@@ -1,0 +1,218 @@
+/* ESTILS MAIN HEADER */
+#main-header {
+  /*background: #333;*/ /*Color Gris */
+  /*background: #0a8ba8;*/ /*Color Turquesa*/
+  background: #34677F; /*Color PA*/
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+/* ESTILS MENU - TOP */
+.topnav {
+	width: 100%;
+	background-color: #34677F;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.topnav img {
+	float: left;
+	width: 170px;
+    transition-property: width;
+    transition-duration: 2s;
+    max-width: 100%;
+    height: auto;
+}
+.topnav img:hover {
+	width: 180px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.topnav a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+}
+
+.topnav a:hover {
+  background: #5A737F;
+}
+
+.topnav button {
+  float: right;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTILS GENERALS */
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: 91vh;
+	font-family: 'Roboto', sans-serif;
+	background: #B4E7FF;
+	font-size: 14px;
+	line-height: 1.5em;
+	overflow-x: hidden; /* levar el scroll horitzontal */
+	padding-top: 85px; /* Relleno del menu */
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 0.8em;
+  margin: 8px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ESTILS DE CONTINGUT */
+#main-content {
+	flex: 1 0 auto;
+  background: white;
+  width: 90%;
+  /*max-width: 800px;*/
+  margin: 15px auto;
+  /*box-shadow: 0 0 10px rgba(0,0,0,.1);*/
+}
+
+  #main-content header,
+  #main-content .content {
+    padding: 20px;
+  }
+
+/* FOOTER */
+#main-footer {
+	flex-shrink: 0;
+  /*background: #333;*/ /*Color Gris */
+  /*background: #0a8ba8;*/ /*Color Turquesa*/
+  background: #5A737F; /*Color PA*/
+  color: white;
+  margin: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 16px;
+  text-align: center;
+}
+
+  #main-footer p {
+    margin: 0;
+    text-align: center;
+  }
+
+  #main-footer a {
+    color: white;
+  }
+
+  #main-footer ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 5px;
+  }
+
+    #main-footer ul li:before{
+      content: "|";
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+/* IMATGES INICI */
+.imgall {
+	margin: auto;
+  width: 100%;
+}
+
+.gallery {
+  margin: 10px;
+  border: 2px solid black;
+  box-shadow: 0 0 2px 1px;
+  max-width: 100%;
+  height: auto;
+}
+
+	.gallery:hover {
+	  border-radius: 10px;
+	  box-shadow: 10px 10px;
+	  max-width: 100%;
+	  height: auto;
+	}
+
+/* ESTILS FORMULARI */
+input[type=text],[type=email],[type=date] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+  resize: none;
+  font-size: 12px;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+input[type=submit],[type=reset] {
+  background-color: #34677F;
+  color: white;
+  padding: 8px 8px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+hr {
+	border: 1px solid grey;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 500px) {
+  .topnav a, button, img {
+    float: none;
+    display: block;
+  }
+}

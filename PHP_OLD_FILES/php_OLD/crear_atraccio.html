@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"; charset="utf-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Parc d'Atraccions Univeylandia</title>
+</head>
+<body>
+  <header id="main-header">
+    <div class="topnav">
+      <img src="img/logo.png">
+      <a href="index.html">Inici</a>
+      <a href="#">Hotel</a>
+      <a href="atraccions.html">Atraccions</a>
+      <a href="contacta.html">Contacta</a>
+      <button onclick="window.location.href='login.html'"> <i class="fas fa-user"></i> Login</button>
+    </div>
+  </header>
+
+  <section id="main-content">
+    <article>
+      <header>
+        <h1>Gestió d'Atraccions</h1>
+      </header>
+      <div class="content">
+
+        <form method="post" action="php/funcAtraccio.php">
+            <div class="input-group">
+                <label><b>Nom</b></label>
+                <input type="text" placeholder="Introdueix el nom" name="nom" required>
+                <label><b>Tipus</b></label>
+                <input type="text" placeholder="Introdueix el tipus" name="tipus" required>
+                <label><b>Descripcio</b></label>
+                <input type="text" placeholder="Introdueix la descripcio" name="desc" required>
+                <label><b>Zona</b></label>
+                <input type="text" placeholder="Introdueix la zona" name="zona" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" name="save" value="Enviar">
+                <input type="submit" name="edit" value="Modificar">
+                <input type="submit" name="del" value="Eliminar">
+                <input type="reset" name="reset" value="Cancel·lar">
+            </div>
+        </form>
+
+      </div>
+    </article>
+  </section>
+
+  <footer id="main-footer">
+    <p id="data">
+      <script src="js/scripts.js"></script>
+    </p>
+
+      <ul>
+        <li>
+          <a href="#">Condicions Generals</a>
+        </li>
+        <li>
+          <a href="#">Política de Privacitat</a>
+        </li>
+        <li>
+          <a href="#">Contacte</a>
+        </li>
+        <li>
+          <a href="#">Política de cookies</a>
+        </li>
+		    <li>
+          © Univeylandia. Tots els drets reservats.
+        </li>
+      </ul>
+  </footer>
+
+</body>
+</html>
